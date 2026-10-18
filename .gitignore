@@ -21,3 +21,5 @@ frontend/dist/
 # Backups
 backup*/
 backups/
+# Vercel local project metadata
+.vercel/
