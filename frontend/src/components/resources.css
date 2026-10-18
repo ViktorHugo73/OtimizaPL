@@ -1,0 +1,14 @@
+.resource-panel { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--border, #ddd); border-radius: 8px; text-align: left; }
+.resource-panel button { margin: .4rem .6rem .4rem 0; padding: .5rem .8rem; cursor: pointer; }
+.resource-panel button:disabled { cursor: wait; }
+.resource-analysis p, .resource-panel p { margin: .7rem 0; }
+.resource-note { font-size: .9rem; }
+.resource-scroll { overflow-x: auto; max-width: 100%; margin: 1rem 0; }
+.resource-scroll table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.resource-scroll th, .resource-scroll td { padding: .65rem; border-bottom: 1px solid var(--border, #ddd); text-align: left; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.resource-scroll th:first-child { white-space: normal; min-width: 150px; }
+.resource-scroll caption { text-align: left; font-weight: 600; padding: .5rem 0; }
+.resource-badge { display: inline-block; border: 1px solid currentColor; border-radius: 5px; padding: .1rem .4rem; margin-left: .3rem; font-size: .8rem; }
+.resource-selectors { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; }
+.resource-selectors label { display: grid; gap: .4rem; }
+.resource-selectors select { max-width: 100%; padding: .5rem; }

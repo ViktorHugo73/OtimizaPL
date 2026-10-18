@@ -1,0 +1,14 @@
+.how-to-page { padding:24px clamp(16px,4vw,48px) 48px; text-align:left; line-height:1.65; }
+.how-to-page h1 { font-size:2rem; margin:16px 0 24px; }
+.how-to-page h2 { font-size:1.3rem; margin:0 0 16px; }
+.how-to-page section { padding:24px; margin-bottom:24px; border:1px solid var(--border); border-radius:12px; }
+.how-to-intro { background:var(--accent-bg); }
+.how-to-page p { margin:0; }
+.how-to-page ol,.how-to-page ul { margin:0; padding-left:24px; }
+.how-to-page li { padding-left:6px; margin-bottom:12px; }
+.how-to-page li:last-child { margin-bottom:0; }
+.how-to-page li::marker { color:var(--text-h); font-weight:600; }
+.how-to-actions { display:flex; gap:16px; flex-wrap:wrap; }
+.how-to-actions a { padding:12px 20px; border:1px solid var(--accent-border); border-radius:24px; color:var(--text-h); }
+.how-to-actions a:first-child { background:var(--accent-bg); }
+@media(max-width:600px) { .how-to-page section { padding:18px; } }

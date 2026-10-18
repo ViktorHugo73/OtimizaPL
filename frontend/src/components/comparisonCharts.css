@@ -1,0 +1,18 @@
+.comparison-charts { text-align: left; padding: 1rem; margin: 2rem 0; border: 1px solid var(--border); border-radius: 8px; }
+.comparison-charts p { margin: .7rem 0; font-size: .9rem; }
+.chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+.comparison-chart { margin: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; }
+.comparison-chart figcaption { font-weight: 650; color: var(--text-h); margin-bottom: 1rem; }
+.comparison-chart ul { list-style: none; padding: 0; margin: 0; }
+.comparison-chart li { display: grid; grid-template-columns: minmax(0, 1fr) 125px; gap: .35rem .7rem; margin: 1rem 0; }
+.chart-label { grid-column: 1 / -1; overflow-wrap: anywhere; font-size: .85rem; }
+.chart-track { position: relative; height: 22px; background: var(--code-bg); border-radius: 3px; }
+.chart-bar { position: absolute; top: 3px; height: 16px; border-radius: 2px; }
+.chart-zero { position: absolute; height: 100%; border-left: 1px solid var(--text); z-index: 1; }
+.chart-color-0 { background: #498cd9; }.chart-color-1 { background: #33a894; }.chart-color-2 { background: #b780d9; }.chart-color-3 { background: #d59038; }
+.chart-value { font-size: .85rem; font-variant-numeric: tabular-nums; max-width: 150px; }
+.chart-axis { padding-right: calc(125px + .7rem); display: flex; justify-content: space-between; font-size: .8rem; }
+.chart-selector { display: grid; gap: .35rem; margin-bottom: .7rem; }
+.chart-selector select { padding: .5rem; width: 100%; }
+@media (max-width: 760px) { .chart-grid { grid-template-columns: minmax(0, 1fr); } }
+

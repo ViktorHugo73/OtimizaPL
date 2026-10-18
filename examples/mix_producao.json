@@ -1,0 +1,21 @@
+{
+  "name": "Mix de produção — caso sintético de validação",
+  "description": "Três produtos contínuos A, B e C. Maximizar margem em unidades monetárias por período, com capacidades em horas. Caso didático sintético, sem dados de empresa real. Ótimo de referência: A=2, B=6, C=0, Z=36.",
+  "objective_type": "max",
+  "variables": [
+    {"name": "A", "description": "Quantidade contínua do produto A por período", "objective_coefficient": 3, "lower_bound": 0, "upper_bound": null},
+    {"name": "B", "description": "Quantidade contínua do produto B por período", "objective_coefficient": 5, "lower_bound": 0, "upper_bound": null},
+    {"name": "C", "description": "Quantidade contínua do produto C por período", "objective_coefficient": 2, "lower_bound": 0, "upper_bound": null}
+  ],
+  "constraints": [
+    {"name": "Corte", "operator": "<=", "rhs": 4, "terms": [
+      {"variable_name": "A", "coefficient": 1}, {"variable_name": "C", "coefficient": 1}
+    ]},
+    {"name": "Usinagem", "operator": "<=", "rhs": 12, "terms": [
+      {"variable_name": "B", "coefficient": 2}, {"variable_name": "C", "coefficient": 1}
+    ]},
+    {"name": "Montagem", "operator": "<=", "rhs": 18, "terms": [
+      {"variable_name": "A", "coefficient": 3}, {"variable_name": "B", "coefficient": 2}, {"variable_name": "C", "coefficient": 1}
+    ]}
+  ]
+}

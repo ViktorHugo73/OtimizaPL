@@ -1,0 +1,29 @@
+{
+  "started_at": "2026-09-16T23:13:53.465137+00:00",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+  "cpu_count": 16,
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "solver_version": "1.0.0",
+  "repetitions": 5,
+  "warmups": 1,
+  "scale_instances": 10,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "hashes": {
+    "motor/simplex.py": "2a0b6d9c6ce5fa057a564f058389066f5ffbc0206523eaeead27dacc67d88d60",
+    "motor/version.py": "631b5c80538d5a4cabc5c8b2183748253569cbd74fe745a0db8e766c0a683da1",
+    "validacao/highs.py": "711aa21e3e8d93c6ebbbeb0748730c4362b0271913e859b519b40da97e3c8415",
+    "validacao/factibilidade.py": "eab125bebdf7241457ae5fef64c8b4aa36a5a076d151150d9cc76e014f608283",
+    "experiments/gerador.py": "88062d3b89efa8aaaeea52dfd81bcd03022a8e4598c1d76bd8337f6ed85f8314",
+    "experiments/experimentos_finais.py": "d6f0b755f7c1087d7ed0e0011e7f1ef31487daa5623202db1602c7c5fd9b1946"
+  },
+  "finished_at": "2026-09-16T23:19:08.601326+00:00",
+  "total": 152,
+  "approved": 152
+}

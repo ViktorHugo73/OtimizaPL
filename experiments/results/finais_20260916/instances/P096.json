@@ -1,0 +1,24 @@
+{
+  "id": "P096",
+  "classe": "ilimitado",
+  "A": [
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "b": [
+    14.754365299345807
+  ],
+  "c": [
+    1.0,
+    0.0
+  ],
+  "operadores": [
+    "<="
+  ],
+  "objetivo": "max",
+  "seed": 13096,
+  "n_variaveis": 2,
+  "n_restricoes": 1
+}

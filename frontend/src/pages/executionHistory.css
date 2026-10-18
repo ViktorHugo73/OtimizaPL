@@ -1,0 +1,7 @@
+.execution-history { padding: 1rem; text-align: left; }
+.execution-history > button { margin: 1rem 0; padding: .5rem .8rem; }
+.execution-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.execution-details dt { font-weight: 650; }
+.execution-details dd { margin: .3rem 0; }
+.execution-history tr[aria-selected="true"] { background: var(--accent-bg); }
+.execution-history nav { margin-bottom: 1rem; }

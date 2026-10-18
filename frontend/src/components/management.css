@@ -1,0 +1,8 @@
+.metadata-actions { text-align: left; margin: 1rem 0; padding: .8rem; border: 1px solid var(--border); border-radius: 6px; }
+.metadata-actions button { padding: .45rem .7rem; margin: .4rem .5rem .4rem 0; }
+.metadata-actions p { margin: .6rem 0; }
+.metadata-editor label { display: grid; gap: .3rem; margin: .7rem 0; }
+.metadata-editor input, .metadata-editor textarea { padding: .5rem; max-width: 100%; }
+.problem-list { text-align: left; padding: 1rem; }
+.problem-list article { margin: 1.3rem 0; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; }
+.problem-list nav { display: flex; flex-wrap: wrap; gap: 1rem; margin: .7rem 0; }

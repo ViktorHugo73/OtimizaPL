@@ -1,5 +1,23 @@
-__pycache__/
-.pytest_cache/
+# Configurações privadas
+.env
+.env.*
+!.env.example
+
+# Python
 .venv/
+__pycache__/
 *.pyc
-experiments/results/*.csv
+.pytest_cache/
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Bancos locais
+*.db
+*.sqlite
+*.sqlite3
+
+# Backups
+backup*/
+backups/

@@ -1,0 +1,113 @@
+{
+  "name": "Caso minimizar custo feixe de molas",
+  "objective_type": "min",
+  "variables": [
+    {
+      "name": "XR",
+      "description": "Número de lâminas novas a serem utilizadas",
+      "objective_coefficient": 450,
+      "lower_bound": 0,
+      "upper_bound": null
+    },
+    {
+      "name": "XS",
+      "description": "Número de lâminas recondicionadas",
+      "objective_coefficient": 800,
+      "lower_bound": 0,
+      "upper_bound": null
+    }
+  ],
+  "constraints": [
+    {
+      "name": "Demanda mínima",
+      "operator": ">=",
+      "rhs": 20,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 1
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "Horas de oficina",
+      "operator": "<=",
+      "rhs": 80,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 3
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Mão de obra",
+      "operator": "<=",
+      "rhs": 40,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 2
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "Estoque disponível",
+      "operator": "<=",
+      "rhs": 25,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 0
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "Mínimo de 30% de lâminas novas",
+      "operator": ">=",
+      "rhs": 0,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 7
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": -3
+        }
+      ]
+    },
+    {
+      "name": "Capacidade do forno",
+      "operator": "<=",
+      "rhs": 8,
+      "terms": [
+        {
+          "variable_name": "XR",
+          "coefficient": 1
+        },
+        {
+          "variable_name": "XS",
+          "coefficient": 0
+        }
+      ]
+    }
+  ],
+  "description": "Minimizar o custo das lâminas novas (XR) e recondicionadas (XS), conforme o modelo fornecido. A desigualdade 7XR − 3XS ≥ 0 foi preservada: com estes nomes de variáveis, ela exige no mínimo 30% de lâminas novas, embora a imagem a denomine mínimo de reformas."
+}
